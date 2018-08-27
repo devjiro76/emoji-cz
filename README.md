@@ -1,30 +1,26 @@
-# emoji-cz
-> A [commitizen](https://github.com/commitizen/cz-cli) emoji adapter.
-
-[![NPM](https://nodei.co/npm/emoji-cz.png?downloads=true&stars=true)](https://nodei.co/npm/emoji-cz/)
-
+# emoji-cz-kr
 ```
-? Select the type of change that you're committing: (Use arrow keys)
-❯ ✨  Feat:      A new feature
-  🐛  Fix:       A bug fix
-  📚  Docs:      Documentation only changes
-  🎨  Style:     Changes that do not affect the meaning of the code
-  🔨  Refactor:  A code change that neither fixes a bug nor adds a feature
-  🚀  Perf:      A code change that improves performance
-  🚨  Test:      Adding missing tests or correcting existing tests
+? 어떤 타입의 커밋인가요?: (Use arrow keys)
+> ✨  기능:   신규기능 추가
+  🐛  수정:   버그 수정
+  📚  문서:   문서 변경
+  🎨  스타일:  코드에 영향을 미치지 않는 스타일 변경
+  🔨  리팩터:  버그 수정이나 기능 추가가 아닌 코드 변경
+  🚀  성능:   성능 개선을 위한 코드 변경
+  🚨  테스트:  테스트를 추가하거나 변경
 ```
 
 ## Demo
-Just check out the commit history above :point_up:
+위 쪽의 커밋 히스토리를 보세요 :point_up:
 
 ## Installation
 ```
-yarn global add emoji-cz
+yarn global add https://github.com/devjiro76/emoji-cz-kr
 # OR
-# npm install --global emoji-cz
+# npm install --global https://github.com/devjiro76/emoji-cz-kr
 
 # set as default adapter globally
-echo '{ "path": "emoji-cz" }' > ~/.czrc
+echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
 ```
 
 ## Usage
@@ -77,7 +73,8 @@ You can overwrite the settings in 3 different ways, it will apply the config by 
 ```
 
 ## Author
-Kai Hao <kevin830726@gmail.com>
+Kai Hao <kevin830726@gmail.com> : Orignial
+Devjiro76 <devjiro76@gmail.com> : Korean Version Translate
 
 ## License
 [MIT](LICENSE)

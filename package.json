@@ -32,7 +32,8 @@
     }
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "commit": "git-cz"
   },
   "engines": {
     "node": ">= 6.0.0"

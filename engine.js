@@ -55,20 +55,23 @@ module.exports = function (options) {
         {
           type: 'list',
           name: 'type',
-          message: 'Select the type of change that you\'re committing:',
+          // message: 'Select the type of change that you\'re committing:',
+          message: '어떤 타입의 커밋인가요?:',
           choices: choices
         }, {
           type: 'input',
           name: 'subject',
-          message: 'Write a short, imperative tense description of the change:\n'
+          // message: 'Write a short, imperative tense description of the change:\n'
+          message: '변경 사항에 대해 짧은 제목을 지어주세요:\n'
         }, {
           type: 'input',
           name: 'body',
-          message: 'Provide a longer description of the change:\n'
+          message: '변경 사항에 대해 자세하게 설명해주세요:\n'
         }, {
           type: 'input',
           name: 'issues',
-          message: 'List any issues closed by this change:\n'
+          // message: 'List any issues closed by this change:\n'
+          message: '이 커밋으로 해결처리 되는 이슈들(#1, #2,...):\n'
         }
       ]).then(function(answers) {
 
