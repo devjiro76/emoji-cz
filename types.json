@@ -1,41 +1,51 @@
 {
-  "작업중": {
+  "WIP": {
+    "name": "작업중",
     "emoji": "🚧",
     "description": "작업내용 임시 저장"
   },
-  "기능": {
+  "Feat": {
+    "name": "기능",
     "emoji": "✨",
     "description": "신규기능 추가"
   },
-  "수정": {
+  "Fix": {
+    "name": "처리",
     "emoji": "🐛",
     "description": "버그 수정"
   },
-  "문서": {
+  "Docs": {
+    "name": "문서",
     "emoji": "📚",
     "description": "문서 변경"
   },
-  "스타일": {
+  "Style": {
+    "name": "스타일",
     "emoji": "🎨",
     "description": "코드에 영향을 미치지 않는 스타일 변경"
   },
-  "리팩터": {
+  "Refactor": {
+    "name": "리팩토링",
     "emoji": "🔨",
     "description": "버그 수정이나 기능 추가가 아닌 코드 변경"
   },
-  "의존성": {
+  "Dependency": {
+    "name": "의존성",
     "emoji": "🔌",
     "description": "의존성 변경"
   },
-  "성능": {
+  "Perfomance": {
+    "name": "성능",
     "emoji": "🚀",
     "description": "성능 개선을 위한 코드 변경"
   },
-  "설정": {
+  "Conf": {
+    "name": "환경",
     "emoji": "⚙️",
-    "description": "환경 설정 변경"
+    "description": "환경 설정, 환경 변수 변경"
   },
-  "테스트": {
+  "Test": {
+    "name": "테스트",
     "emoji": "🚨",
     "description": "테스트 코드 변경"
   }
