@@ -1,6 +1,6 @@
 "format cjs";
 
-const merge = require('lodash.merge');
+// const merge = require('lodash.merge');
 const engine = require('./engine');
 const types = require('./types.json');
 const getConfig = require('./getConfig');
