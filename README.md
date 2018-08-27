@@ -15,6 +15,11 @@
 ## Demo
 위 쪽의 커밋 히스토리를 보세요 :point_up:
 
+## Depency
+당연한 것이지만 commitizen이 설치 되어 있어야 합니다.
+`npm install -g commitizen`
+
+
 ## Installation
 ```
 yarn global add https://github.com/devjiro76/emoji-cz-kr
@@ -23,6 +28,17 @@ yarn global add https://github.com/devjiro76/emoji-cz-kr
 
 # set as default adapter globally
 echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
+```
+
+
+## Installation - 아니면
+package.json 에 아래 항목 추가
+```
+"config": {
+  "commitizen": {
+    "path": "./node_modules/emoji-cz-kr"
+  }
+}
 ```
 
 ## Usage
@@ -75,7 +91,7 @@ You can overwrite the settings in 3 different ways, it will apply the config by 
 ```
 
 ## Author
-Kai Hao <kevin830726@gmail.com> : Orignial
+Kai Hao <kevin830726@gmail.com> : Orignial  
 Devjiro76 <devjiro76@gmail.com> : Korean Version Translate
 
 ## License
