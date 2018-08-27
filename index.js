@@ -8,8 +8,8 @@ const getConfig = require('./getConfig');
 const config = getConfig();
 
 module.exports = engine({
-  types: config && config.types ?
-    merge(types, config.types) :
-    types,
+  types: config && config.types
+    ? config.types // merge(types, config.types) :
+    : types,
   format: config && config.format,
 });

@@ -1,42 +1,30 @@
 {
-  "작업중": {
-    "emoji": "🚧",
-    "description": "작업내용 임시 저장"
-  },
-  "기능": {
+  "Feat": {
     "emoji": "✨",
-    "description": "신규기능 추가"
+    "description": "A new feature"
   },
-  "수정": {
+  "Fix": {
     "emoji": "🐛",
-    "description": "버그 수정"
+    "description": "A bug fix"
   },
-  "문서": {
+  "Docs": {
     "emoji": "📚",
-    "description": "문서 변경"
+    "description": "Documentation only changes"
   },
-  "스타일": {
+  "Style": {
     "emoji": "🎨",
-    "description": "코드에 영향을 미치지 않는 스타일 변경"
+    "description": "Changes that do not affect the meaning of the code"
   },
-  "리팩터": {
+  "Refactor": {
     "emoji": "🔨",
-    "description": "버그 수정이나 기능 추가가 아닌 코드 변경"
+    "description": "A code change that neither fixes a bug nor adds a feature"
   },
-  "디펜던시": {
-    "emoji": "🔌",
-    "description": "디펜던시 변경"
-  },
-  "성능": {
+  "Perf": {
     "emoji": "🚀",
-    "description": "성능 개선을 위한 코드 변경"
+    "description": "A code change that improves performance"
   },
-  "설정": {
-    "emoji": "⚙️",
-    "description": "설정 변경"
-  },
-  "테스트": {
+  "Test": {
     "emoji": "🚨",
-    "description": "테스트를 추가하거나 변경"
+    "description": "Adding missing tests or correcting existing tests"
   }
 }
