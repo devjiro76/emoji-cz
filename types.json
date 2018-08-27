@@ -31,6 +31,10 @@
     "emoji": "🚀",
     "description": "성능 개선을 위한 코드 변경"
   },
+  "설정": {
+    "emoji": "⚙️",
+    "description": "설정 변경"
+  },
   "테스트": {
     "emoji": "🚨",
     "description": "테스트를 추가하거나 변경"
