@@ -1,6 +1,6 @@
 const findConfig = require('find-config');
 
-const PKG_NAME = 'emoji-cz';
+const PKG_NAME = 'emoji-cz-kr';
 
 const getConfig = (cwd = process.cwd()) => {
   // find package.json
