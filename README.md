@@ -13,27 +13,33 @@
 ```
 
 ## Demo
-위 쪽의 커밋 히스토리를 보세요 :point_up:
+위 쪽의 [커밋 히스토리](https://github.com/devjiro76/emoji-cz-kr/commits/master)를 보세요 :point_up:
 
 ## Depency
-당연한 것이지만 commitizen이 설치 되어 있어야 합니다.
-`npm install -g commitizen`
+당연한 것이지만 commitizen이 설치 되어 있어야 합니다.  
+```npm install -g commitizen```
+
+자세한 설치방법은 [commitizen 페이지](https://github.com/commitizen/cz-cli)를 참조.
 
 
 ## Installation
 ```
+# 전역 설치
 yarn global add https://github.com/devjiro76/emoji-cz-kr
 # OR
 # npm install --global https://github.com/devjiro76/emoji-cz-kr
 
-# set as default adapter globally
-echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
+# Local 설치
+yarn add -D https://github.com/devjiro76/emoji-cz-kr
+npm install --save-dev https://github.com/devjiro76/emoji-cz-kr
 ```
 
-
-## Installation - 아니면
-package.json 에 아래 항목 추가
+## Commitizen에 Adopter로 연결
 ```
+# 전역설치 했을 경우
+$ echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
+
+# Local 설치했을 경우 package.json 에 아래 항목 추가
 "config": {
   "commitizen": {
     "path": "./node_modules/emoji-cz-kr"
@@ -41,12 +47,8 @@ package.json 에 아래 항목 추가
 }
 ```
 
-## Usage
-Simply use `git cz` instead of `git commit` when committing. See the doc of [Commitizen](https://github.com/commitizen/cz-cli) for more info.
-
 ## Settings
-You can overwrite the settings in 3 different ways, it will apply the config by this order:
-
+3가지 방법으로 디폴트 설정을 덮을 수 있습니다.
 1. `package.json`
 2. `.cz.json`
 3. `.czrc`
@@ -56,7 +58,7 @@ You can overwrite the settings in 3 different ways, it will apply the config by 
 "config": {
   "commitizen": {
     // ...
-    "emoji-cz": {
+    "emoji-cz-kr": {
       // Overwrite types prompted to the command line.
       "types": {
         "Fix": {
@@ -84,15 +86,15 @@ You can overwrite the settings in 3 different ways, it will apply the config by 
 
 // in .cz.json or .czrc
 {
-  "emoji-cz": {
+  "emoji-cz-kr": {
     //...
   }
 }
 ```
 
 ## Author
-Kai Hao <kevin830726@gmail.com> : Orignial  
-Devjiro76 <devjiro76@gmail.com> : Korean Version Translate
+Original: Kai Hao <kevin830726@gmail.com>  
+Korean Version Translate: Devjiro76 <devjiro76@gmail.com>
 
 ## License
 [MIT](LICENSE)
