@@ -5,9 +5,9 @@ var map = require("lodash.map");
 var longest = require("longest");
 var rightPad = require("right-pad");
 
-var filter = function(close, array) {
+var filter = function(array) {
   return array.filter(function(x) {
-    return close ? "close " + x : x;
+    return x;
   });
 };
 
@@ -21,6 +21,7 @@ module.exports = function(options) {
   var length = longest(Object.keys(types)).length + 2;
   var choices = map(types, function(type, key) {
     var name = type.name || key;
+    console.log("Close: ", type.close);
     return {
       name:
         type.emoji +
@@ -31,7 +32,7 @@ module.exports = function(options) {
       value: {
         emoji: type.emoji,
         name: name,
-        close: type.close == undefined ? true : type.close
+        close: type.close === undefined ? true : type.close
       }
     };
   });
@@ -104,7 +105,8 @@ module.exports = function(options) {
 
         var issues = wrap(answers.issues, wrapOptions);
 
-        var footer = filter(answers.type.close, [issues]).join("\n\n");
+        var footer = filter([issues]).join("\n\n");
+        footer = answers.type.close ? "close " + footer : footer;
 
         commit(head + "\n\n" + body + "\n\n" + footer);
       });
