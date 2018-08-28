@@ -106,7 +106,7 @@ module.exports = function(options) {
         var issues = wrap(answers.issues, wrapOptions);
 
         var footer = filter([issues]).join("\n\n");
-        footer = answers.type.close ? "close " + footer : footer;
+        footer = answers.type.close ? "Closes " + footer : footer;
 
         commit(head + "\n\n" + body + "\n\n" + footer);
       });
