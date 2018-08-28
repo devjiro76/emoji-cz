@@ -1,4 +1,5 @@
 # emoji-cz-kr
+
 ```
 > 🚧  작업중:   작업내용 임시 저장
   ✨  기능:    신규기능 추가
@@ -13,16 +14,18 @@
 ```
 
 ## Demo
-위 쪽의 [커밋 히스토리](https://github.com/devjiro76/emoji-cz-kr/commits/master)를 보세요 :point_up:
+
+위 쪽의 [커밋 히스토리](https://github.com/devjiro76/emoji-cz-kr/commits/master)를 보세요. :point_up:
 
 ## Depency
-당연한 것이지만 commitizen이 설치 되어 있어야 합니다.  
-```npm install -g commitizen```
+
+당연한 것이지만 commitizen 이 설치 되어 있어야 합니다.  
+`npm install -g commitizen`
 
 자세한 설치방법은 [commitizen 페이지](https://github.com/commitizen/cz-cli)를 참조.
 
-
 ## Installation
+
 ```
 # 전역 설치
 yarn global add https://github.com/devjiro76/emoji-cz-kr
@@ -34,7 +37,8 @@ yarn add -D https://github.com/devjiro76/emoji-cz-kr
 npm install --save-dev https://github.com/devjiro76/emoji-cz-kr
 ```
 
-## Commitizen에 Adopter로 연결
+## Commitizen 에 Adopter 로 연결
+
 ```
 # 전역설치 했을 경우
 $ echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
@@ -48,7 +52,9 @@ $ echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
 ```
 
 ## Settings
-3가지 방법으로 디폴트 설정을 덮을 수 있습니다.
+
+3 가지 방법으로 디폴트 설정을 덮을 수 있습니다.
+
 1. `package.json`
 2. `.cz.json`
 3. `.czrc`
@@ -93,8 +99,10 @@ $ echo '{ "path": "emoji-cz-kr" }' > ~/.czrc
 ```
 
 ## Author
+
 Original: Kai Hao <kevin830726@gmail.com>  
 Korean Version Translate: Devjiro76 <devjiro76@gmail.com>
 
 ## License
+
 [MIT](LICENSE)
