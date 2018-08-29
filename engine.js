@@ -21,7 +21,6 @@ module.exports = function(options) {
   var length = longest(Object.keys(types)).length + 2;
   var choices = map(types, function(type, key) {
     var name = type.name || key;
-    console.log("Close: ", type.close);
     return {
       name:
         type.emoji +
@@ -32,7 +31,7 @@ module.exports = function(options) {
       value: {
         emoji: type.emoji,
         name: name,
-        close: type.close === undefined ? true : type.close
+        close: type.close
       }
     };
   });
@@ -61,14 +60,12 @@ module.exports = function(options) {
         {
           type: "list",
           name: "type",
-          // message: 'Select the type of change that you\'re committing:',
           message: "어떤 타입의 커밋인가요?:",
           choices: choices
         },
         {
           type: "input",
           name: "subject",
-          // message: 'Write a short, imperative tense description of the change:\n'
           message: "변경 사항에 대해 짧은 제목을 지어주세요:\n"
         },
         {
@@ -79,8 +76,12 @@ module.exports = function(options) {
         {
           type: "input",
           name: "issues",
-          // message: 'List any issues closed by this change:\n'
-          message: "이 커밋으로 해결처리 되는 이슈들(#1, #2,...):\n"
+          message: "이 커밋과 연결된 이슈들: (#1, #2,...):\n"
+        },
+        {
+          type: "confirm",
+          name: "closes",
+          message: "위 이슈들을 클로즈 처리할까요?:\n"
         }
       ]).then(function(answers) {
         var maxLineWidth = 100;
